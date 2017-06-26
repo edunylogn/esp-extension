@@ -10,6 +10,8 @@ body, section {			/* Change width and height to own preferences */
     width: 500px;
     height: 400px;
     overflow-x: hidden;
+    padding-top: 15px;
+    background-color: #fcfcfc;
 }
 
 /* Basic style tweaks */
@@ -20,3 +22,97 @@ section { padding: 5px;}
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: red; }
+
+.callout {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #999999;
+}
+.callout a,
+.callout .callout-link {
+    font-weight: 500;
+    text-decoration: underline;
+}
+.callout p:last-child {
+    margin-bottom: 0;
+}
+.callout-success {
+    background-color: #eef7ea;
+    border-color: #669900;
+    color: #444444;
+}
+.callout-success .callout-link {
+    color: #669900;
+}
+.callout-info {
+    background-color: #f2f9fc;
+    border-color: #5bc0de;
+    color: #444444;
+}
+.callout-info .callout-link {
+    color: #5bc0de;
+}
+.callout-warning {
+    background-color: #fcf8e3;
+    border-color: #ffcc33;
+    color: #444444;
+}
+.callout-warning .callout-link {
+    color: #ffcc33;
+}
+.callout-danger {
+    background-color: #f9f0f0;
+    border-color: #cb2027;
+    color: #444444;
+}
+.callout-danger .callout-link {
+    color: #cb2027;
+}
+.callout-attention {
+    background-color: #fde6cf;
+    border-color: #f68a24;
+    color: #444444;
+}
+.callout-attention hr {
+    border-top-color: #f68a24;
+}
+.callout-attention .callout-link {
+    color: #f68a24;
+}
+.callout {
+    margin: 0;
+}
+
+.close, .mark-done {
+    transition: opacity 0.3s linear,
+    color 0.3s linear;
+}
+
+.close:hover {
+    color: #DD0000;
+}
+
+.mark-done {
+    opacity: 0.2;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.mark-done:hover {
+    opacity: 0.5;
+    color: #00DD00;
+}
+
+.callout-success {
+    text-decoration: line-through;
+}
+
+
+.todo-form {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+i {
+    font-style: normal !important;
+}
